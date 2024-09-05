@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp">
+
+        <!-- Logo dentro de la Toolbar -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_vertical" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <!-- ImageView para la foto -->
+
+    <!-- Título -->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="208dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Imagen de un café"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Selecciona el tamaño del café"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- LinearLayout para RadioGroup en horizontal -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgTamañoCafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbPequeño"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pequeño" />
+
+            <RadioButton
+                android:id="@+id/rbMediano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mediano" />
+
+            <RadioButton
+                android:id="@+id/rbGrande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grande" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- Checkboxes para personalización -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Personalización"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/cbCrema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Crema extra" />
+
+    <CheckBox
+        android:id="@+id/cbAzucar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Azúcar extra" />
+
+    <CheckBox
+        android:id="@+id/cbDescafeinado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Sin cafeína" />
+
+    <!-- Botón para enviar el pedido -->
+    <Button
+        android:id="@+id/btnEnviarPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Pedido"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/tvResumenPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

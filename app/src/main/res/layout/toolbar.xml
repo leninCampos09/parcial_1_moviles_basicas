@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar con logo y nombre de la aplicación -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp">
+
+
+        <TextView
+            android:id="@+id/tvNombreApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- Logo de la empresa con tamaño fijo -->
+        <ImageView
+            android:id="@+id/logoEmpresa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Logo de la empresa"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp"/>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Contenido principal de la aplicación -->
+    <!-- Puedes agregar aquí tu contenido -->
+
+</LinearLayout>
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rgTamañoCafe" type="id" />
+    <item name="cbCrema" type="id" />
+    <item name="cbAzucar" type="id" />
+    <item name="cbDescafeinado" type="id" />
+    <item name="btnEnviarPedido" type="id" />
+    <item name="tvResumenPedido" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="main" type="id" />
+    <item name="rbPequeño" type="id" />
+    <item name="rbMediano" type="id" />
+    <item name="rbGrande" type="id" />
+</resources>
